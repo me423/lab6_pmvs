@@ -30,7 +30,7 @@ static ssize_t mytimer_write(struct kobject *kobj, struct kobj_attribute *attr, 
 	return count;
 }
 
-static struct kobj_attribute delay_attribute =__ATTR(delay, 0777, mytimer_read, mytimer_write);
+static struct kobj_attribute delay_attribute =__ATTR(delay, 0664, mytimer_read, mytimer_write);
 
 static int mytimer_init(void)
 {
